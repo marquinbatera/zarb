@@ -1,0 +1,22 @@
+{
+	"description": "The CodeIgniter framework",
+	"name": "codeigniter/framework",
+	"type": "project",
+	"homepage": "http://codeigniter.com",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"irc": "irc://irc.freenode.net/codeigniter",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"require": {
+		"php": ">=5.4",
+		"guzzlehttp/guzzle": "^6.2",
+		"aws/aws-sdk-php": "^3.17",
+		"league/flysystem-aws-s3-v3": "^1.0",
+		"league/fractal": "^0.13.0",
+		"peppeocchi/php-cron-scheduler": "^1.3"
+	},
+	"require-dev": {}
+}

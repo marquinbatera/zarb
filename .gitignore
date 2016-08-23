@@ -1,0 +1,41 @@
+.DS_Store
+
+application/config/database.php
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+# IGNORE PROXIES (DOCTRINE)
+application/models/Proxies/**/*
+application/models/ProxiesOTL/**/*
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+ng-app/src/core/main/configs/AppConfig.js
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+assets/img/serviceprovider/
+assets/img/customer/
+assets/img/perfil/
+
+./composer.lock
+composer.lock
+./.htaccess

@@ -1,0 +1,45 @@
+RewriteEngine On
+
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+
+RewriteRule ^.*$ - [NC,L]
+RewriteRule !\.(css|js|html)$ index.php [NC,L]
+
+SetEnv CI_ENV               development
+SetEnv CAN_SEND_TO_OTL      true
+SetEnv SEND_TO_OTL_DEFAULT  true
+SetEnv MY_ID_COMPANY_OTL    23
+
+# OWN
+SetEnv DB_HOST   localhost
+SetEnv DB_PORT   3306
+SetEnv DB_DBNAME 127.0.0.1
+SetEnv DB_USER   root
+SetEnv DB_PWD
+
+# OTL
+SetEnv DB_HOST_OTL      localhost
+SetEnv DB_PORT_OTL      3306
+SetEnv DB_DBNAME_OTL    127.0.0.1
+SetEnv DB_USER_OTL      root
+SetEnv DB_PWD_OTL
+
+#export CI_ENV=development
+#export CAN_SEND_TO_OTL=false
+#export SEND_TO_OTL_DEFAULT=true
+#export MY_ID_COMPANY_OTL=23
+#export DB_HOST=localhost
+##export DB_PORT=3306
+#export DB_DBNAME=127.0.0.1
+#export DB_USER=root
+#export DB_PWD=
+#export DB_HOST_OTL=localhost
+#export DB_PORT_OTL=3306
+#export DB_DBNAME_OTL=127.0.0.1
+#export DB_USER_OTL=root
+#export DB_PWD_OTL=

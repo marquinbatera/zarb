@@ -1,0 +1,420 @@
+/* CSS Document */
+body{
+	background: #F5F5F5;
+	color: #363A35;
+}
+a{
+	color: #7DBB49;
+}
+
+a:hover{
+	color: #72AA3C;
+	text-decoration: none;
+}
+
+h3.title{
+	font-family: "Segoe Light";
+	font-weight: normal;
+}
+
+form .div {
+	position: relative;
+	padding: 15px 0;
+}
+
+form .div h3{
+	font-family: "Segoe Regular";
+	font-weight: normal;
+	background-color: #F5F5F5;
+	display:table;
+	padding-right: 15px
+}
+
+form .div:before{
+	content: '';
+	background-color: #CCC;
+	height: 1px;
+	display: table;
+	width: 100%;
+	top: 32px;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo-client{
+	max-width: 220px;
+	max-height: 46px;
+	height: auto;
+}
+
+.navbar-toggle  span{
+	background: #7DBB49;
+}
+
+.navbar-toggle span::after, .navbar-toggle span::before {
+    background-color: #7DBB49;
+}
+
+.navbar-toggle--htla.active span::after, .navbar-toggle--htla.active span::before, .navbar-toggle--htra.active span::after, .navbar-toggle--htra.active span::before {
+	background: #FFF;
+}
+
+.menu{
+	background-color: #338E44;
+}
+
+.menu-list a, .menu-list a .icon{
+	color: #FFF;
+}
+
+.top-menu h4{
+	color: #FFF;
+}
+
+.top-menu{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.submenu{
+	background-color: rgba(0,0,0,0.1);
+}
+.submenu a{
+	color: #BBEFBB;
+}
+
+.submenu a:hover{
+	color: #FFF;
+	background-color: transparent
+}
+
+.menu-list a:active, .menu-list a:focus{
+	background: #FFF;
+	color: #7DBB49;
+}
+
+.content-menu li.active a{
+	border-right: 4px solid #E13E3E;
+	background: #E5E5E5;;
+}
+
+.content-menu a:hover{
+	border-right: 4px solid #E13E3E;
+}
+
+.content-subheader {
+    background: #FFF;
+    border-top: 1px solid #EEE;
+}
+
+.content-box{
+	margin-top:15px;
+}
+
+.btn-default.active:hover{
+	background-color: #DDD !important;
+}
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default{
+	background-color: #F5F5F5;
+    border-color: #adadad;
+}
+
+.content-subheader .active .glyphicon{
+	color: #E13E3E;
+}
+
+.content-menu a{
+	color: #545454
+}
+
+
+.btn-danger {
+    color: #E13E3E;
+    background-color: transparent;
+}
+
+.btn-danger:hover, .btn-danger.focus, .btn-danger:focus { 
+    color: #fff !important;
+    background-color: #CA3939 !important;
+    border-color: #CA3939 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #7DBB49;
+    border-color: #7DBB49;
+}
+
+.btn-primary:hover, .btn-primary.focus, .btn-primary:focus, .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary { 
+    color: #fff !important;
+    background-color: #72AA3C !important;
+    border-color: #72AA3C !important;
+}
+
+.btn-default {
+    color: #7DBB49;
+    background-color: #FFF;
+}
+
+.btn-default:hover, .btn-default.focus, .btn-default:focus {
+	color: #7DBB49 ;
+    background-color: #F4F4F4 ;
+    border-color: #7DBB49 ;
+}
+
+.btn-more{
+	background-color: transparent;
+}
+
+.btn-more:hover, .btn-more.focus, .btn-more:focus{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.uib-datepicker{
+	outline: none
+}
+
+.uib-datepicker em{
+	font-style: normal;
+	font-weight: bold
+}
+
+.uib-datepicker .btn-default{
+	border-color: #FFF ;
+}
+
+.uib-datepicker .btn-default:hover, .uib-datepicker .btn-default.focus, .uib-datepicker .btn-default:focus {
+	color: #7DBB49 ;
+    background-color: #F4F4F4 ;
+    border-color: #7DBB49 ;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #7DBB49;
+    border-color: #7DBB49;
+}
+
+.btn-success:hover, .btn-success.focus, .btn-success:focus {
+    color: #fff !important;
+    background-color: #72AA3C !important;
+    border-color: #72AA3C !important;
+}
+
+.btn-attach {
+    color: #FFF;
+    background-color: #666;
+}
+
+.btn-attach:hover, .btn-attach.focus, .btn-attach:focus {
+	color: #FFF !important;
+    background-color: #777 !important;
+    border-color: #777 !important;
+}
+
+.btn-over {
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,0.3);
+}
+.btn-over i{
+	font-size: 22px;
+    margin-top: 2px;
+}
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after{
+	color: #FFF;
+}
+
+.table-bordered {
+    border: 1px solid #DDD;
+}
+
+.table-bordered>thead>tr>th{
+	border-bottom: 1px solid #95D195 !important;
+}
+    
+
+.form-control:focus {
+    border-color: #74C174;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(125,187,73,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(125,187,73,.6);
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #7DBB49;
+    border-color: #7DBB49;
+}
+
+table.dataTable>thead{
+	background: #7DBB49;
+	color: #FFF;
+}
+
+table.dataTable{
+	background: #FFF
+}
+
+.table-line thead{
+	border-bottom: 2px solid #EEE
+}
+
+.table-line tbody tr td{
+	border-bottom: 1px solid #EEE
+}
+
+#searchOp.open .search {
+    width: 200px;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	border-color: #74C174;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(116,193,116,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(116,193,116,.6);
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+	background-color: #7DBB49;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    border-color: #EEE;
+}
+
+.progress-bar-done{
+	background-color: #999;
+}
+
+.list-contacts .all-contacts{
+	color: #7DBB49;
+	font-family: "Segoe Semibold";
+	text-align:center
+}
+
+.btn-default .badge{
+	background-color: #E13E3E;
+}
+
+#progress{
+	position: relative; 
+	width: 100%
+}
+
+.progress-bar-infinite {
+    height: 4px;
+    background: #2B7FB2;
+    left: 0;
+    position: absolute;
+    -webkit-animation: anime 1s infinite; /* Chrome, Safari, Opera */
+    animation: anime 1s infinite;
+}
+
+.progress.anime{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px !important;
+	-webkit-animation: anime 1s infinite; /* Chrome, Safari, Opera */
+    animation: anime 1s infinite;
+}
+
+.content-progress{
+	position: relative;
+	height: 10px;
+}
+
+.content-progress .progress.anime{
+	margin-top:0 !important;
+	top:0;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes anime {
+    0% {left: 0; right: 100%;}
+    50% {left: 0; right: 0;}
+    100% {left: 100%; right: 0;}
+
+}
+
+@keyframes anime {
+    0% {left: 0; right: 100%;}
+    50% {left: 0; right: 0;}
+    100% {left: 100%; right: 0;}
+}
+
+.flag_1 .ion-flag, .floating-panel ul li a.flag_1:before{
+	color: #CCC;
+}
+.flag_2 .ion-flag, .floating-panel ul li a.flag_2:before{
+	color: #F8DB06;
+}
+.flag_3 .ion-flag, .floating-panel ul li a.flag_3:before{
+	color: #F18D06;
+}
+.flag_4 .ion-flag, .flag_20 .ion-flag, .floating-panel ul li a.flag_4:before{
+	color: #21C717;
+}
+.flag_5 .ion-flag, .flag_21 .ion-flag, .floating-panel ul li a.flag_5:before{
+	color: #13A4E8;
+}
+.flag_6 .ion-flag, .flag_22 .ion-flag{
+	color: #666;
+}
+.flag_7 .ion-flag{
+	color: #E13E3E;
+ 
+}
+.flag_8 .ion-flag{
+	color: #E34772;
+
+}
+.flag_9 .ion-flag{
+	color: #A30A0D;
+
+}
+.flag_10 .ion-flag{
+	color: #1997B7;
+
+}
+.flag_11 .ion-flag{
+	color: #DE2B2E;
+
+}
+.flag_12 .ion-flag{
+	color: #3B63B5;
+
+}
+.flag_13 .ion-flag{
+	color: #EEE;
+}
+
+.floating-panel ul li a:before{
+	display: inline-block;
+	font-family: "Ionicons";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-rendering: auto;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+	padding-right: 6px;
+}
+
+.floating-panel ul li a.flag:before{
+	content: "\f279"; 
+}
+
+.floating-panel ul li a.available:before{
+	content: "\f251";
+	color: #10A7EF;
+}
+
+
